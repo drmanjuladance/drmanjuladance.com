@@ -1,91 +1,304 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Learn Indian classical dance online with Dr. Manjula's School of Indian Classical Dance. Bharatanatyam and Mohiniyattam classes for students around the world.">
-<title>Dr. Manjula's School of Indian Classical Dance</title>
+<meta name="theme-color" content="#24131c">
+<meta name="description" content="Learn Bharatanatyam and Mohiniyattam online with Dr. Devi Manjula. Classes for students in India and around the world.">
+<title>Dr. Manjula’s School of Indian Classical Dance</title>
 <style>
-:root{--wine:#571a2a;--wine2:#7a2c3f;--gold:#c8a45d;--cream:#fbf7ef;--ink:#28211f;--muted:#6e6460;--white:#fff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:var(--cream);line-height:1.6}
-a{color:inherit}.topbar{background:var(--wine);color:#fff;text-align:center;padding:8px 16px;font:600 12px/1.5 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
-header{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px clamp(20px,6vw,84px);background:#fffaf3;border-bottom:1px solid #eadfcf}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.mark{width:45px;height:45px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--wine);font-size:23px}.brand strong{display:block;color:var(--wine);font-size:16px;line-height:1.2}.brand small{display:block;font:11px Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-top:5px}
-nav{display:flex;gap:23px;align-items:center;font:13px Arial,sans-serif}nav a{text-decoration:none}nav a:hover{color:var(--wine2)}.nav-cta,.btn{display:inline-block;text-decoration:none;background:var(--wine);color:white;padding:13px 19px;border-radius:3px;font:600 13px Arial,sans-serif;letter-spacing:.02em}.nav-cta:hover,.btn:hover{background:var(--wine2)}
-.hero{display:grid;grid-template-columns:1.05fr .95fr;min-height:570px;background:linear-gradient(110deg,#fbf7ef 0%,#f4eadb 100%);padding:58px clamp(20px,8vw,112px);gap:55px;align-items:center}
-.eyebrow{font:700 11px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--wine2)}h1{font-size:clamp(40px,5vw,68px);font-weight:normal;line-height:1.06;letter-spacing:-.035em;margin:17px 0 22px;color:var(--wine)}h1 em{color:#a47a39;font-weight:normal}.hero p{font-size:17px;color:#625651;max-width:540px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}.btn.secondary{background:transparent;border:1px solid var(--wine);color:var(--wine)}.note{font:12px Arial,sans-serif;color:var(--muted);margin-top:18px}
-.hero-visual{min-height:410px;position:relative;display:flex;align-items:center;justify-content:center}.photo-placeholder{width:min(100%,390px);height:430px;background:#e6d4b7;border:9px solid #fffaf3;outline:1px solid #d8c39e;overflow:hidden;box-shadow:0 18px 45px #57341b1c}.photo-placeholder img{width:100%;height:100%;object-fit:cover;object-position:center 22%;display:block}
-.seal{position:absolute;bottom:8px;left:0;background:var(--wine);color:#fff;padding:18px 22px;max-width:210px;box-shadow:0 8px 24px #34111a30}.seal strong{display:block;font-size:23px;color:#e4c27b;font-weight:normal}.seal span{font:11px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}
-.strip{background:var(--wine);color:#f7e7c6;display:flex;justify-content:center;gap:clamp(18px,5vw,70px);padding:17px 20px;flex-wrap:wrap;font:11px Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase}
-section{padding:76px clamp(20px,8vw,112px)}.section-head{text-align:center;max-width:720px;margin:0 auto 38px}.section-head h2{font-size:clamp(30px,3.4vw,45px);line-height:1.15;font-weight:normal;color:var(--wine);margin:10px 0 14px}.section-head p{color:var(--muted);margin:0}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid #eadfcf;padding:28px;min-height:230px}.card .num{font:12px Arial,sans-serif;letter-spacing:.16em;color:#a47a39}.card h3{font-size:24px;font-weight:normal;color:var(--wine);margin:15px 0 9px}.card p{font-size:14px;color:var(--muted);margin:0 0 18px}.text-link{font:700 12px Arial,sans-serif;color:var(--wine2);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:3px}
-.about{background:#f0e5d5;display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}.about-art{min-height:340px;background:#3b1420;color:#e5c782;overflow:hidden;border:8px solid #fffaf3;outline:1px solid #d8c39e}.about-art img{width:100%;height:420px;object-fit:cover;object-position:center 25%;display:block}.about h2{font-size:clamp(30px,3.3vw,43px);font-weight:normal;line-height:1.15;color:var(--wine);margin:12px 0 18px}.about p{color:#5d514c}.credentials{display:flex;gap:25px;flex-wrap:wrap;margin-top:24px}.credential strong{display:block;color:var(--wine);font-size:22px;font-weight:normal}.credential small{font:11px Arial,sans-serif;color:var(--muted);letter-spacing:.04em}
-.gallery{background:#fffaf3}.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.gallery-grid figure{margin:0;background:#fff;border:1px solid #eadfcf;padding:7px}.gallery-grid img{display:block;width:100%;height:310px;object-fit:cover;object-position:center 25%}.gallery-grid figcaption{padding:10px 7px 6px;font:12px Arial,sans-serif;color:var(--muted)}
-.pricing{background:#fffaf3}.price-card{max-width:510px;margin:auto;background:#fff;border:1px solid #d7bd85;text-align:center;padding:36px 30px;box-shadow:0 12px 32px #38151b0b}.price-card h3{font-size:26px;font-weight:normal;color:var(--wine);margin:5px 0}.price{font-size:52px;line-height:1.2;color:var(--wine);margin:18px 0 4px}.price small{font:13px Arial,sans-serif;color:var(--muted)}.price-card p{color:var(--muted);font-size:14px}.price-card ul{list-style:none;padding:0;margin:22px 0}.price-card li{padding:7px;border-bottom:1px solid #f0e7d9;font:13px Arial,sans-serif}.price-card li:before{content:'✦';color:#a47a39;margin-right:9px}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.step{border-top:1px solid var(--gold);padding-top:18px}.step strong{font-size:22px;font-weight:normal;color:var(--wine)}.step p{color:var(--muted);font-size:14px}
-.cta{background:var(--wine);color:#fff;text-align:center}.cta h2{font-size:clamp(30px,4vw,48px);font-weight:normal;line-height:1.15;margin:12px auto 16px;max-width:760px}.cta p{color:#ead8d0;max-width:600px;margin:0 auto}.cta .btn{background:var(--gold);color:#35131b;margin-top:25px}.cta .eyebrow{color:#e5c782}
-footer{background:#2b1118;color:#e8d8d2;padding:28px clamp(20px,8vw,112px);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font:12px Arial,sans-serif}footer a{color:#e5c782;text-decoration:none}
-@media(max-width:800px){.gallery-grid{grid-template-columns:repeat(2,1fr)}.gallery-grid img{height:240px}header{align-items:flex-start}.brand strong{font-size:14px}nav{gap:12px;flex-wrap:wrap;justify-content:flex-end}nav a:not(.nav-cta){display:none}.hero{grid-template-columns:1fr;padding-top:44px;gap:25px}.hero-visual{min-height:350px}.photo-placeholder{height:350px}.seal{left:0;bottom:0}.cards,.steps{grid-template-columns:1fr}.about{grid-template-columns:1fr;gap:30px}.about-art{min-height:230px}section{padding-top:56px;padding-bottom:56px}}
+:root{--ink:#21151b;--wine:#4a172a;--wine2:#6d263c;--gold:#d8b875;--cream:#fbf7f0;--sand:#efe3d1;--muted:#6e6264;--white:#fff;--line:#e5d7c5;--shadow:0 22px 60px rgba(45,20,31,.13)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+a{color:inherit}
+img{max-width:100%}
+.container{width:min(1180px,calc(100% - 44px));margin:auto}
+.announcement{background:var(--wine);color:#f8ead1;text-align:center;padding:9px 14px;font-size:11px;letter-spacing:.15em;text-transform:uppercase}
+header{position:sticky;top:0;z-index:10;background:rgba(251,247,240,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(74,23,42,.1)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:82px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+.brand-mark{display:grid;place-items:center;width:48px;height:48px;border:1px solid var(--gold);border-radius:50%;color:var(--wine);font-family:Georgia,serif;font-size:25px;flex:none}
+.brand-title{display:block;color:var(--wine);font-family:Georgia,serif;font-size:17px;line-height:1.2}
+.brand-sub{display:block;color:var(--muted);font-size:9px;letter-spacing:.17em;text-transform:uppercase;margin-top:5px}
+.nav-links{display:flex;align-items:center;gap:25px}
+.nav-links>a:not(.btn){font-size:12px;text-decoration:none;color:#45343a}
+.nav-links>a:not(.btn):hover{color:var(--wine2)}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;text-decoration:none;background:var(--wine);color:#fff;padding:14px 19px;border-radius:3px;font-size:12px;font-weight:700;letter-spacing:.03em;border:1px solid var(--wine);transition:transform .2s,background .2s}
+.btn:hover{background:var(--wine2);transform:translateY(-2px)}
+.btn-light{background:transparent;color:var(--wine)}
+.btn-light:hover{background:var(--wine);color:#fff}
+.btn-gold{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:#e5c98d}
+.eyebrow{display:flex;align-items:center;gap:10px;color:var(--wine2);font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
+.eyebrow:before{content:"";display:block;width:26px;height:1px;background:var(--gold)}
+.hero{position:relative;overflow:hidden;background:linear-gradient(110deg,#fbf7f0 0%,#f3e6d4 62%,#e9d6bd 100%);padding:68px 0 72px}
+.hero:after{content:"";position:absolute;right:-140px;top:-180px;width:460px;height:460px;border:1px solid rgba(109,38,60,.12);border-radius:50%;box-shadow:0 0 0 45px rgba(109,38,60,.025),0 0 0 90px rgba(109,38,60,.02);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1fr .92fr;gap:60px;align-items:center;position:relative;z-index:1}
+.hero-copy{padding:14px 0}
+h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:400}
+h1{font-size:clamp(43px,5.7vw,76px);line-height:1.02;letter-spacing:-.045em;color:var(--wine);margin:20px 0}
+h1 em{color:#9a7136;font-weight:400}
+.hero-copy>p{max-width:550px;color:#62555a;font-size:16px;line-height:1.85}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-note{margin-top:21px;color:#77696b;font-size:11px;letter-spacing:.04em}
+.hero-visual{position:relative;min-height:510px}
+.hero-photo{position:absolute;inset:0 24px 18px 32px;border:8px solid rgba(255,252,246,.92);outline:1px solid #d5b982;box-shadow:var(--shadow);overflow:hidden;background:#ddc9ae}
+.hero-photo img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 22%}
+.photo-label{position:absolute;left:0;bottom:0;z-index:2;background:var(--wine);color:white;padding:19px 23px;box-shadow:var(--shadow);max-width:240px}
+.photo-label strong{display:block;font-family:Georgia,serif;font-size:26px;font-weight:400;color:var(--gold);line-height:1.2}
+.photo-label span{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-top:5px}
+.photo-stamp{position:absolute;right:0;top:22px;width:94px;height:94px;border-radius:50%;background:var(--gold);color:var(--wine);display:grid;place-items:center;text-align:center;font-size:10px;letter-spacing:.1em;text-transform:uppercase;line-height:1.5;transform:rotate(8deg);box-shadow:0 8px 25px #35152220}
+.trust-strip{background:var(--wine);color:#f8ead1}
+.trust-inner{display:grid;grid-template-columns:repeat(4,1fr);padding:22px 0;gap:20px}
+.trust-item{display:flex;align-items:center;gap:12px;border-right:1px solid #ffffff2b;padding-right:16px}
+.trust-item:last-child{border:0}
+.trust-icon{font-family:Georgia,serif;color:var(--gold);font-size:23px}
+.trust-item strong{display:block;font-size:12px;font-weight:600}
+.trust-item span{display:block;color:#ddc8c9;font-size:10px;margin-top:2px}
+section.section{padding:84px 0}
+.section-heading{text-align:center;max-width:730px;margin:0 auto 42px}
+.section-heading .eyebrow{justify-content:center}
+.section-heading h2{font-size:clamp(32px,4vw,49px);line-height:1.12;color:var(--wine);margin:14px 0}
+.section-heading p{color:var(--muted);font-size:14px;max-width:620px;margin:0 auto}
+.classes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.class-card{background:#fff;border:1px solid var(--line);padding:29px 27px 27px;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.class-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.class-card:before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:var(--gold)}
+.card-index{font-size:10px;letter-spacing:.15em;color:#9a7136;font-weight:700}
+.class-card h3{font-size:26px;line-height:1.18;color:var(--wine);margin:17px 0 11px}
+.class-card p{font-size:13px;color:var(--muted);min-height:66px;margin:0 0 22px}
+.text-link{display:inline-flex;align-items:center;gap:8px;color:var(--wine2);font-size:12px;font-weight:700;text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:5px}
+.text-link:hover{gap:13px}
+.class-card .mini-tag{display:inline-block;margin-top:18px;padding:6px 9px;background:#f7efe2;color:#76562d;font-size:9px;letter-spacing:.1em;text-transform:uppercase}
+.teacher{background:var(--sand)}
+.teacher-grid{display:grid;grid-template-columns:.83fr 1.17fr;gap:70px;align-items:center}
+.teacher-photo{height:480px;position:relative;margin:0 20px 18px 0;background:var(--wine);border:8px solid #fffaf3;outline:1px solid #d5b982;box-shadow:var(--shadow);overflow:hidden}
+.teacher-photo img{height:100%;width:100%;object-fit:cover;object-position:center 20%;display:block}
+.teacher-photo:after{content:"";position:absolute;left:17px;bottom:17px;width:65px;height:65px;border-left:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+.teacher-copy h2{font-size:clamp(34px,4vw,49px);line-height:1.1;color:var(--wine);margin:15px 0 20px}
+.teacher-copy p{color:#62555a;font-size:14px;line-height:1.9}
+.stats{display:flex;flex-wrap:wrap;gap:26px;margin:26px 0 28px;padding-top:22px;border-top:1px solid #d8c5ad}
+.stat strong{display:block;font-family:Georgia,serif;font-size:25px;font-weight:400;color:var(--wine)}
+.stat span{display:block;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+.gallery-grid{display:grid;grid-template-columns:1.12fr .88fr .88fr;grid-template-rows:230px 230px;gap:14px}
+.gallery-item{position:relative;margin:0;overflow:hidden;background:#e4d3bc}
+.gallery-item:first-child{grid-row:span 2}
+.gallery-item img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 25%;transition:transform .6s}
+.gallery-item:hover img{transform:scale(1.04)}
+.gallery-item figcaption{position:absolute;bottom:0;left:0;right:0;padding:30px 15px 13px;background:linear-gradient(transparent,rgba(32,13,23,.78));color:white;font-size:11px;letter-spacing:.07em;text-transform:uppercase}
+.gallery-note{text-align:center;margin-top:24px;color:var(--muted);font-size:12px}
+.process{background:#fffaf3}
+.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.process-item{border-top:1px solid var(--gold);padding-top:18px}
+.process-num{font-family:Georgia,serif;font-size:30px;color:#b28a4d}
+.process-item h3{font-size:22px;color:var(--wine);margin:8px 0}
+.process-item p{font-size:13px;color:var(--muted);margin:0}
+.enquiry{background:var(--wine);color:#fff;position:relative;overflow:hidden}
+.enquiry:before{content:"";position:absolute;width:430px;height:430px;border:1px solid #ffffff18;border-radius:50%;top:-220px;right:-100px;box-shadow:0 0 0 45px #ffffff08,0 0 0 90px #ffffff05}
+.enquiry-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:start;position:relative;z-index:1}
+.enquiry-copy .eyebrow{color:var(--gold)}
+.enquiry-copy h2{font-size:clamp(36px,4vw,52px);line-height:1.08;margin:15px 0}
+.enquiry-copy p{color:#e3d0d5;font-size:14px;line-height:1.85}
+.contact-points{display:grid;gap:12px;margin-top:27px}
+.contact-point{display:flex;gap:12px;align-items:center;color:#f5e8e6;font-size:12px}
+.contact-point b{font-weight:600}
+.contact-point .dot{width:30px;height:30px;border:1px solid #ffffff3b;border-radius:50%;display:grid;place-items:center;color:var(--gold);flex:none}
+.form-card{background:#fffaf3;color:var(--ink);padding:28px;box-shadow:0 22px 60px #14070d35}
+.form-card h3{font-size:27px;color:var(--wine);margin:0 0 5px}
+.form-card>p{font-size:12px;color:var(--muted);margin:0 0 20px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field.full{grid-column:1/-1}
+.field label{font-size:10px;color:#55454a;font-weight:700;letter-spacing:.04em}
+.field input,.field select,.field textarea{width:100%;border:1px solid #dfd1c2;background:white;border-radius:2px;padding:12px 11px;color:var(--ink);font:13px Arial,sans-serif;outline:none}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:#9b7543;box-shadow:0 0 0 3px #d8b87530}
+.field textarea{resize:vertical;min-height:82px}
+.form-submit{width:100%;margin-top:16px;cursor:pointer;font-family:Arial,sans-serif}
+.form-help{font-size:10px;color:#7c6e6e;margin-top:10px}
+footer{background:#1c1016;color:#e7d9da;padding:25px 0}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
+.footer-brand{font-family:Georgia,serif;font-size:15px}
+.footer-small{font-size:10px;color:#c7b5ba}
+.footer-links{display:flex;gap:18px;flex-wrap:wrap}
+.footer-links a{font-size:11px;text-decoration:none;color:#e7d9da}
+.footer-links a:hover{color:var(--gold)}
+.whatsapp-float{position:fixed;right:18px;bottom:18px;z-index:12;background:#218c59;color:#fff;text-decoration:none;border-radius:30px;padding:13px 17px;box-shadow:0 8px 28px #0003;font-size:12px;font-weight:700;display:flex;align-items:center;gap:8px}
+@media(max-width:900px){.hero-grid{gap:30px}.hero-visual{min-height:430px}.teacher-grid{gap:38px}.enquiry-grid{gap:32px}.nav-links{gap:15px}}
+@media(max-width:700px){
+.container{width:min(100% - 30px,560px)}
+.announcement{font-size:9px;letter-spacing:.1em}
+.nav{min-height:72px;gap:10px}.brand-mark{width:40px;height:40px;font-size:21px}.brand-title{font-size:14px}.brand-sub{font-size:8px;letter-spacing:.1em}
+.nav-links>a:not(.btn){display:none}.nav-links .btn{padding:11px 12px;font-size:10px}
+.hero{padding:43px 0 48px}.hero-grid{grid-template-columns:1fr;gap:30px}.hero-copy{padding:0}.hero h1{font-size:clamp(42px,12vw,60px);margin:16px 0}.hero-copy>p{font-size:14px}.hero-visual{min-height:390px;margin:0 5px 0 0}.hero-photo{inset:0 15px 18px 15px}.photo-stamp{width:76px;height:76px;font-size:8px;right:-1px;top:12px}.photo-label{padding:15px 18px}.photo-label strong{font-size:23px}
+.trust-inner{grid-template-columns:1fr 1fr;gap:17px;padding:20px 0}.trust-item{border:0;padding:0}.trust-item strong{font-size:11px}
+section.section{padding:60px 0}.section-heading{margin-bottom:29px}.section-heading h2{font-size:35px}.classes-grid{grid-template-columns:1fr;gap:13px}.class-card{padding:24px;min-height:0}.class-card p{min-height:0}
+.teacher-grid{grid-template-columns:1fr;gap:29px}.teacher-photo{height:390px;margin-right:10px}.teacher-copy h2{font-size:37px}.stats{gap:20px}.stat strong{font-size:23px}
+.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:230px 175px 175px;gap:10px}.gallery-item:first-child{grid-row:span 2}.gallery-item img{height:100%}.gallery-item figcaption{font-size:9px;padding:25px 9px 10px}
+.process-grid{grid-template-columns:1fr;gap:21px}.process-item{display:grid;grid-template-columns:42px 1fr;column-gap:12px}.process-num{grid-row:span 2}.process-item h3{margin:0 0 5px}.process-item p{grid-column:2}
+.enquiry-grid{grid-template-columns:1fr;gap:28px}.enquiry-copy h2{font-size:39px}.form-card{padding:20px}.form-grid{grid-template-columns:1fr 1fr}.field input,.field select,.field textarea{font-size:16px}
+.footer-inner{align-items:flex-start;flex-direction:column}.whatsapp-float{right:12px;bottom:12px;padding:12px 14px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 </style>
 </head>
 <body>
-<div class="topbar">Online admissions open · Learn from anywhere in the world</div>
+<div class="announcement">Live online classes · India & international students welcome</div>
 <header>
-<a class="brand" href="#home"><span class="mark">ந</span><span><strong>Dr. Manjula’s School</strong><small>of Indian Classical Dance</small></span></a>
-<nav><a href="#classes">Classes</a><a href="#teacher">Our Guru</a><a href="#gallery">Gallery</a><a href="#fees">Fees</a><a class="nav-cta" href="#contact">Enquire Now</a></nav>
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="Dr. Manjula's School of Indian Classical Dance home">
+      <span class="brand-mark">ந</span>
+      <span><span class="brand-title">Dr. Manjula’s School</span><span class="brand-sub">of Indian Classical Dance</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#classes">Classes</a><a href="#guru">Our Guru</a><a href="#gallery">Gallery</a>
+      <a class="btn" href="#enquiry">Enquire Now ↗</a>
+    </nav>
+  </div>
 </header>
 <main>
-<section class="hero" id="home">
-<div>
-<div class="eyebrow">Tradition · Discipline · Grace</div>
-<h1>Discover the beauty of <em>Indian classical dance.</em></h1>
-<p>Learn Bharatanatyam and Mohiniyattam with personal guidance, structured online classes, and a learning experience rooted in tradition.</p>
-<div class="actions"><a class="btn" href="#contact">Enquire About Classes ↗</a><a class="btn secondary" href="#classes">Explore Classes</a></div>
-<div class="note">Online classes for students in India and across the world</div>
-</div>
-<div class="hero-visual"><div class="photo-placeholder"><img src="images/hero-bharatanatyam.jpg" alt="Dr. Devi Manjula performing Bharatanatyam"></div><div class="seal"><strong>29+ years</strong><span>Learning · Teaching · Performing</span></div></div>
-</section>
-<div class="strip"><span>Bharatanatyam</span><span>Mohiniyattam</span><span>India Online Batch</span><span>International Online Batch</span></div>
-<section id="classes">
-<div class="section-head"><div class="eyebrow">Online Dance Classes</div><h2>One school, students across the world</h2><p>Learn Indian classical dance online with Dr. Devi Manjula, whether you are based in India or overseas.</p></div>
-<div class="cards">
-<article class="card"><div class="num">01 / STUDENTS IN INDIA</div><h3>India Online Batch</h3><p>Online classical dance training for students living in India. Enquire to learn about available batches, class timings, and fees.</p><a class="text-link" href="#contact">Enquire for India batch →</a></article>
-<article class="card"><div class="num">02 / STUDENTS OVERSEAS</div><h3>International Online Batch</h3><p>Join live online classes from abroad, with batch timings discussed to suit students in different countries and time zones.</p><a class="text-link" href="#fees">View international fee →</a></article>
-<article class="card"><div class="num">03 / CLASSICAL FORMS</div><h3>Bharatanatyam & Mohiniyattam</h3><p>Explore Indian classical dance through structured training in movement, rhythm, expression, and tradition.</p><a class="text-link" href="#teacher">Meet your guru →</a></article>
-</div>
-</section>
-<section class="about" id="teacher">
-<div class="about-art"><img src="images/guru-portrait.jpg" alt="Dr. Devi Manjula in traditional attire"></div>
-<div><div class="eyebrow">Meet Your Guru</div><h2>Guidance shaped by years of dedication.</h2><p>Dr. Devi Manjula is an Ayurvedic physician and Indian classical dancer with 29 years of dance experience. Her training includes study at Regatta School in Thiruvananthapuram, an MFA in Bharatanatyam from Annamalai University, and advanced training under Dr. Smt. Saroj Vaidyanathan.</p><p>Her journey includes performances on many stages, teaching experience, and judging at school and college arts festivals. Online classes bring this experience to students across the world.</p><div class="credentials"><div class="credential"><strong>29 years</strong><small>Dance experience</small></div><div class="credential"><strong>MFA</strong><small>Bharatanatyam</small></div><div class="credential"><strong>550+</strong><small>Performances</small></div></div></div>
-</section>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">A timeless art. A personal journey.</div>
+        <h1>Bring the grace of <em>Indian classical dance</em> into your life.</h1>
+        <p>Discover Bharatanatyam and Mohiniyattam with Dr. Devi Manjula. Learn online through thoughtful guidance, expressive practice, and a tradition that connects students across the world.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#enquiry">Find Your Class <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-light" href="#guru">Meet Your Guru</a>
+        </div>
+        <div class="hero-note">Online learning for students in India and overseas · Individual enquiries welcome</div>
+      </div>
+      <div class="hero-visual" aria-label="Dr. Devi Manjula in classical dance">
+        <div class="hero-photo"><img src="hero-bharatanatyam.jpg" alt="Dr. Devi Manjula performing Bharatanatyam" fetchpriority="high"></div>
+        <div class="photo-label"><strong>29+ years</strong><span>Learning · Teaching · Performing</span></div>
+        <div class="photo-stamp">Tradition<br>with grace<br>✦</div>
+      </div>
+    </div>
+  </section>
 
-<section class="gallery" id="gallery">
-<div class="section-head"><div class="eyebrow">Moments in Dance</div><h2>Grace, expression & tradition</h2><p>A glimpse of Dr. Devi Manjula’s classical dance performances.</p></div>
-<div class="gallery-grid">
-<figure><img src="images/bharatanatyam-expression.jpg" alt="Dr. Devi Manjula performing Bharatanatyam expressions" loading="lazy"><figcaption>Bharatanatyam · Expression</figcaption></figure>
-<figure><img src="images/mohiniyattam-tree.jpg" alt="Dr. Devi Manjula in a classical dance pose outdoors" loading="lazy"><figcaption>Classical dance · Grace</figcaption></figure>
-<figure><img src="images/mohiniyattam-performance.jpg" alt="Dr. Devi Manjula performing on stage" loading="lazy"><figcaption>Stage performance</figcaption></figure>
-<figure><img src="images/classical-dance-pose.jpg" alt="Dr. Devi Manjula in a traditional dance pose" loading="lazy"><figcaption>Classical pose</figcaption></figure>
-<figure><img src="images/dance-portrait.jpg" alt="Dr. Devi Manjula in classical dance costume" loading="lazy"><figcaption>Dance portrait</figcaption></figure>
-<figure><img src="images/classical-performance.jpg" alt="Dr. Devi Manjula during a classical performance" loading="lazy"><figcaption>Performance moments</figcaption></figure>
-<figure><img src="images/dance-action.jpg" alt="Dr. Devi Manjula in a dynamic dance movement" loading="lazy"><figcaption>Movement & rhythm</figcaption></figure>
-</div>
-</section>
+  <div class="trust-strip">
+    <div class="container trust-inner">
+      <div class="trust-item"><span class="trust-icon">✦</span><div><strong>Bharatanatyam</strong><span>Classical training</span></div></div>
+      <div class="trust-item"><span class="trust-icon">❋</span><div><strong>Mohiniyattam</strong><span>Graceful expression</span></div></div>
+      <div class="trust-item"><span class="trust-icon">◎</span><div><strong>Live Online Classes</strong><span>Learn from anywhere</span></div></div>
+      <div class="trust-item"><span class="trust-icon">⌘</span><div><strong>Personal Guidance</strong><span>Enquire for your needs</span></div></div>
+    </div>
+  </div>
 
-<section class="pricing" id="fees">
-<div class="section-head"><div class="eyebrow">Batches & Enquiries</div><h2>Find the right class for you</h2><p>We’ll share the suitable batch, class timings, availability, and fee details when you enquire.</p></div>
-<div class="cards">
-<article class="card"><div class="num">01 / INDIA</div><h3>India Online Batch</h3><p>Online Bharatanatyam and Mohiniyattam classes for students living in India. Contact us for batch timings and fee details.</p><a class="text-link" href="#contact">Enquire about India batch →</a></article>
-<article class="card"><div class="num">02 / INTERNATIONAL</div><h3>International Online Batch</h3><p>Online classes for students living overseas, with schedule options discussed according to country and time zone. Contact us for fee details.</p><a class="text-link" href="#contact">Enquire about international batch →</a></article>
-<article class="card"><div class="num">03 / PERSONAL GUIDANCE</div><h3>Individual Classes</h3><p>Looking for one-to-one training? Enquire about availability, class schedule, and fees.</p><a class="text-link" href="#contact">Make an enquiry →</a></article>
-</div>
-</section>
-<section>
-<div class="section-head"><div class="eyebrow">How It Works</div><h2>From enquiry to your first class</h2></div>
-<div class="steps"><div class="step"><strong>01. Get in touch</strong><p>Tell us the student’s age, dance experience, preferred dance form, and country/time zone.</p></div><div class="step"><strong>02. Find your batch</strong><p>We’ll share suitable class timings, availability, and fee details.</p></div><div class="step"><strong>03. Start learning</strong><p>Join your online class and begin a structured journey in Indian classical dance.</p></div></div>
-</section>
-<section class="cta" id="contact"><div class="eyebrow">Admissions Open</div><h2>Bring the grace of Indian classical dance into your life.</h2><p>Whether you are in India or living overseas, contact us to enquire about online Bharatanatyam and Mohiniyattam classes.</p><a class="btn" href="https://wa.me/?text=Hello%2C%20I%27m%20interested%20in%20online%20classes%20at%20Dr.%20Manjula%27s%20School%20of%20Indian%20Classical%20Dance.">Enquire on WhatsApp ↗</a><div class="note" style="color:#e8d8d2">Before publishing, replace this demo WhatsApp link with Devi Manjula Dance Class’s official number.</div></section>
+  <section class="section" id="classes">
+    <div class="container">
+      <div class="section-heading"><div class="eyebrow">Choose your learning path</div><h2>Your dance journey begins here.</h2><p>Whether you are beginning for the first time or continuing your practice, get in touch to find the class format that suits you.</p></div>
+      <div class="classes-grid">
+        <article class="class-card"><div class="card-index">01 / STUDENTS IN INDIA</div><h3>India Online Batch</h3><p>Structured online learning in Indian classical dance, with batch timings and availability shared during enquiry.</p><a class="text-link" href="#enquiry" data-enquiry="India Online Batch">Enquire about India batch ↗</a><span class="mini-tag">Live online learning</span></article>
+        <article class="class-card"><div class="card-index">02 / STUDENTS OVERSEAS</div><h3>International Online Batch</h3><p>Learn from abroad with schedule discussions that consider your country and time zone. Fee details are shared directly.</p><a class="text-link" href="#enquiry" data-enquiry="International Online Batch">Explore international classes ↗</a><span class="mini-tag">Worldwide enquiries welcome</span></article>
+        <article class="class-card"><div class="card-index">03 / ONE-TO-ONE GUIDANCE</div><h3>Individual Classes</h3><p>Looking for more personalised guidance? Enquire about one-to-one class availability, timings, and learning goals.</p><a class="text-link" href="#enquiry" data-enquiry="Individual Classes">Ask about individual classes ↗</a><span class="mini-tag">Personal learning enquiry</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section teacher" id="guru">
+    <div class="container teacher-grid">
+      <div class="teacher-photo"><img src="guru-portrait.jpg" alt="Dr. Devi Manjula in traditional dance attire" loading="lazy"></div>
+      <div class="teacher-copy">
+        <div class="eyebrow">Meet your guru</div>
+        <h2>Experience, artistry and a deep respect for tradition.</h2>
+        <p>Dr. Devi Manjula R is an Ayurvedic physician and Indian classical dancer with 29 years of dance experience. She holds an MFA in Bharatanatyam and has trained in classical dance under respected gurus.</p>
+        <p>Her artistic journey includes more than 550 stage performances, teaching experience, and over a decade of experience as an arts festival judge. Through her own dance school and online classes, she shares her passion for Indian classical dance with learners near and far.</p>
+        <div class="stats"><div class="stat"><strong>29+</strong><span>Years in dance</span></div><div class="stat"><strong>MFA</strong><span>Bharatanatyam</span></div><div class="stat"><strong>550+</strong><span>Stage performances</span></div></div>
+        <a class="btn btn-light" href="#enquiry">Learn with Dr. Manjula ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-heading"><div class="eyebrow">A glimpse of the art</div><h2>Every movement tells a story.</h2><p>Explore selected moments of expression, rhythm and classical beauty.</p></div>
+      <div class="gallery-grid">
+        <figure class="gallery-item"><img src="mohiniyattam-performance.jpg" alt="Dr. Devi Manjula performing a classical dance on stage" loading="lazy"><figcaption>On stage · Expression in motion</figcaption></figure>
+        <figure class="gallery-item"><img src="bharatanatyam-expression.jpg" alt="Bharatanatyam expression and hand gesture" loading="lazy"><figcaption>Bharatanatyam · Abhinaya</figcaption></figure>
+        <figure class="gallery-item"><img src="mohiniyattam-tree.jpg" alt="Dr. Devi Manjula in a graceful outdoor dance pose" loading="lazy"><figcaption>Grace in every gesture</figcaption></figure>
+        <figure class="gallery-item"><img src="classical-dance-pose.jpg" alt="Classical dance pose by Dr. Devi Manjula" loading="lazy"><figcaption>Form · Balance · Rhythm</figcaption></figure>
+        <figure class="gallery-item"><img src="dance-action.jpg" alt="Dr. Devi Manjula in a dynamic dance movement" loading="lazy"><figcaption>Movement and energy</figcaption></figure>
+      </div>
+      <p class="gallery-note">Selected photographs of Dr. Devi Manjula · Authentic images, presented with care.</p>
+    </div>
+  </section>
+
+  <section class="section process">
+    <div class="container">
+      <div class="section-heading"><div class="eyebrow">Simple to begin</div><h2>From your first enquiry to your first class.</h2><p>We’ll guide you through the next steps and share the relevant details directly.</p></div>
+      <div class="process-grid">
+        <div class="process-item"><div class="process-num">01</div><h3>Tell us about you</h3><p>Share the student's age, experience, preferred dance form, and country or time zone.</p></div>
+        <div class="process-item"><div class="process-num">02</div><h3>Find a suitable class</h3><p>Discuss available batches, class timings, learning goals, and fee details with us.</p></div>
+        <div class="process-item"><div class="process-num">03</div><h3>Begin your journey</h3><p>Once the details are agreed, receive the information needed to start learning online.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section enquiry" id="enquiry">
+    <div class="container enquiry-grid">
+      <div class="enquiry-copy">
+        <div class="eyebrow">Admissions & enquiries</div>
+        <h2>Let’s find the right class for you.</h2>
+        <p>Interested in learning Bharatanatyam or Mohiniyattam? Send us a few details and your enquiry will open in WhatsApp, ready for you to review and send.</p>
+        <div class="contact-points">
+          <div class="contact-point"><span class="dot">↗</span><span><b>India & international students</b><br>Online class enquiries welcome</span></div>
+          <div class="contact-point"><span class="dot">✦</span><span><b>Fee details on enquiry</b><br>Fees are not displayed publicly</span></div>
+          <div class="contact-point"><span class="dot">◎</span><span><b>Direct contact</b><br>WhatsApp: +91 70346 66962</span></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <h3>Make an enquiry</h3><p>Complete what you can. You can review the message before sending it.</p>
+        <form id="enquiryForm">
+          <div class="form-grid">
+            <div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" required placeholder="Full name"></div>
+            <div class="field"><label for="country">Country / location *</label><input id="country" name="country" autocomplete="country-name" required placeholder="e.g. India, UAE, UK"></div>
+            <div class="field"><label for="studentAge">Student's age</label><input id="studentAge" name="studentAge" inputmode="numeric" placeholder="Age"></div>
+            <div class="field"><label for="danceForm">Dance form *</label><select id="danceForm" name="danceForm" required><option value="">Select dance form</option><option>Bharatanatyam</option><option>Mohiniyattam</option><option>Both</option><option>Need guidance</option></select></div>
+            <div class="field full"><label for="classType">Class preference *</label><select id="classType" name="classType" required><option value="">Choose a class type</option><option>India Online Batch</option><option>International Online Batch</option><option>Individual Classes</option><option>Need help choosing</option></select></div>
+            <div class="field full"><label for="experience">Previous dance experience / message</label><textarea id="experience" name="experience" placeholder="Beginner or experienced? Any preferred timing?"></textarea></div>
+          </div>
+          <button class="btn form-submit" type="submit">Continue to WhatsApp ↗</button>
+          <div class="form-help">Your message will open in WhatsApp. It will not be sent automatically.</div>
+        </form>
+      </div>
+    </div>
+  </section>
 </main>
-<footer><span>© Dr. Manjula’s School of Indian Classical Dance</span><span>Online classes worldwide · <a href="#contact">Contact for admissions</a></span></footer>
+<footer>
+  <div class="container footer-inner">
+    <div><div class="footer-brand">Dr. Manjula’s School of Indian Classical Dance</div><div class="footer-small">A tradition of dance · Online classes worldwide</div></div>
+    <div class="footer-links"><a href="#classes">Classes</a><a href="#guru">Our Guru</a><a href="https://www.instagram.com/dr.manjulas_school_of_dance/" target="_blank" rel="noopener">Instagram ↗</a><a href="mailto:dancewithmanjula@gmail.com">Email us ↗</a></div>
+    <div class="footer-small">© <span id="year"></span> Dr. Manjula’s School of Indian Classical Dance</div>
+  </div>
+</footer>
+<a class="whatsapp-float" href="https://wa.me/917034669692?text=Hello%2C%20I%27m%20interested%20in%20online%20classes%20at%20Dr.%20Manjula%27s%20School%20of%20Indian%20Classical%20Dance." target="_blank" rel="noopener" aria-label="Enquire on WhatsApp">☏ WhatsApp Enquiry</a>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.querySelectorAll('[data-enquiry]').forEach(function(link){
+  link.addEventListener('click',function(){
+    var select=document.getElementById('classType');
+    if(select){select.value=link.getAttribute('data-enquiry');}
+  });
+});
+document.getElementById('enquiryForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  var d=new FormData(e.currentTarget);
+  var lines=[
+    'Hello Dr. Manjula’s School of Indian Classical Dance,',
+    '',
+    'I would like to enquire about online dance classes.',
+    'Name: '+(d.get('name')||'Not provided'),
+    'Country/location: '+(d.get('country')||'Not provided'),
+    'Student age: '+(d.get('studentAge')||'Not provided'),
+    'Dance form: '+(d.get('danceForm')||'Not selected'),
+    'Class preference: '+(d.get('classType')||'Not selected'),
+    'Experience / message: '+(d.get('experience')||'Not provided')
+  ];
+  var url='https://wa.me/917034669692?text='+encodeURIComponent(lines.join('\n'));
+  window.open(url,'_blank','noopener');
+});
+</script>
 </body>
 </html>
